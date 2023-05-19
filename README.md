@@ -1,7 +1,7 @@
 # greengrocer
 
-This is a App created using Flutter Language.
+This is an App created using Flutter Language.
 
-Este é um projeto de Aplicativo, criado usando a linguagem Flutter.
+Este é um projeto de Aplicativo criado usando a linguagem Flutter.
 
 
