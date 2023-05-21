@@ -1,13 +1,40 @@
 import 'package:flutter/material.dart';
+import 'package:greengrocer/src/home/home_tab.dart';
 
-class BaseScreen extends StatelessWidget {
-  const BaseScreen({super.key});
+class BaseScreen extends StatefulWidget {
+ const BaseScreen({super.key});
+
+  @override
+  State<BaseScreen> createState() => _BaseScreenState();
+}
+
+  class _BaseScreenState extends State<BaseScreen> {
+  int currentIndex = 0; // Inicializando com 0, por que quero que o botão 'home' inicie selecionado. Se eu mudar o número, iniciará outros botões conforme a sequência.
+  final pageController = PageController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(color: Colors.white),
+        body: PageView(
+          physics:const NeverScrollableScrollPhysics(),//trava a tela, para não passar para o lado
+          controller: pageController, // mudar a tela de acordo com o 'ícone' selecionado.
+          children: [
+            const HomeTab(),
+            Container(color: Colors.red),
+            Container(color: Colors.blue),
+            Container(color: Colors.pink),
+          ],
+        ),
         bottomNavigationBar: BottomNavigationBar(
+          currentIndex: currentIndex,
+          onTap: (index) {
+            setState(() {
+              currentIndex = index;
+               // currentIndex controla os botões embaixo, pra isso, foi criado uma variável, que foi inserida aí dentro
+              //necessita mudar o estado, pra isso foi mudado o 'Stateless' para 'Stateful'. Função ONTAP
+              pageController.jumpToPage(index); // controlar a página, quando selecionar um ícone ele mudar junto com a página (definida no pagecontroller(variável))
+            });
+          },
           type: BottomNavigationBarType.fixed,
           backgroundColor: Colors.green,
           selectedItemColor: Colors.white,
