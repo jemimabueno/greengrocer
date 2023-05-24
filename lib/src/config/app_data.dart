@@ -26,7 +26,7 @@ ItemModel guava = ItemModel(
 
 ItemModel kiwi = ItemModel(
   description: 'O melhor kiwi da região',
-  imgUrl: 'assets/fruits/guava.png',
+  imgUrl: 'assets/fruits/kiwi.png',
   itemName: 'Kiwi',
   price: 2.5,
   unit: 'un',
@@ -54,11 +54,11 @@ List<ItemModel> items = [apple,
  kiwi, 
  mango, 
  papaya];
- 
+
 List<String> categories = [
   'Frutas',
   'Grãos',
   'Verduras',
   'Temperos',
-  'Cereais',
+  'Cereais', 
 ];
