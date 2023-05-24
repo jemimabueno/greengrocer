@@ -2,7 +2,7 @@ import 'package:greengrocer/src/models/item_model.dart';
 
 ItemModel apple = ItemModel(
   description: 'A melhor maçã da região',
-  imgUrl: 'assets\fruits\apple.png',
+  imgUrl:'assets/fruits/apple.png',
   itemName: 'Maçã',
   price: 5.5,
   unit: 'kg',
