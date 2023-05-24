@@ -48,7 +48,13 @@ ItemModel papaya = ItemModel(
   unit: 'kg',
 );
 
-List<ItemModel> items = [apple, grape, guava, kiwi, mango, papaya];
+List<ItemModel> items = [apple,
+ grape,
+ guava,
+ kiwi, 
+ mango, 
+ papaya];
+ 
 List<String> categories = [
   'Frutas',
   'Grãos',
