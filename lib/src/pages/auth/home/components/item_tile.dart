@@ -3,6 +3,7 @@ import 'package:greengrocer/src/config/custom_colors.dart';
 import 'package:greengrocer/src/models/item_model.dart';
 
 
+// ignore: must_be_immutable
 class ItemTile extends StatelessWidget {
    ItemTile({
     super.key,
@@ -32,7 +33,7 @@ class ItemTile extends StatelessWidget {
             //Nome
             Text(
               item.itemName,
-              style: TextStyle(
+              style:const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
@@ -51,7 +52,8 @@ class ItemTile extends StatelessWidget {
                 Text('/${item.unit}',style: TextStyle(color: Colors.grey.shade500,
                 fontWeight: FontWeight.bold,
                 fontSize:12,
-                ),),
+                ),
+                ),
               ],
             ),
           ],

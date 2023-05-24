@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:greengrocer/src/config/custom_colors.dart';
-import 'package:greengrocer/src/config/app_data.dart' as appData;
 import 'package:greengrocer/src/pages/auth/home/components/item_tile.dart';
 import 'components/category_tile.dart';
+import 'package:greengrocer/src/config/app_data.dart' as appData;
+
 
 class HomeTab extends StatefulWidget {
   const HomeTab({super.key});
@@ -20,8 +21,7 @@ class _HomeTabState extends State<HomeTab> {
       //App Bar
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        elevation:
-            0, //pra tirar a sombra que a appbar faz , mesmo deixando transparente
+        elevation:0, //pra tirar a sombra que a appbar faz , mesmo deixando transparente
         centerTitle: true,
         title: Text.rich(
           TextSpan(
