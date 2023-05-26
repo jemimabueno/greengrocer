@@ -79,7 +79,16 @@ class ProductScreen extends StatelessWidget {
                       ),
                     ),
                     //Botão adicionar carrinho
-                    ElevatedButton(onPressed: (){}, child: Text('botão'),// expanded fez o botão ir la pra baixo
+                    SizedBox(
+                      height: 55,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                        ),
+                        onPressed: (){}, child: Text('botão'),// expanded fez o botão ir la pra baixo
+                      ),
                     ),
                   ]),
             ),
