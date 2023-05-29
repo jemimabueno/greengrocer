@@ -7,7 +7,7 @@ Este é um projeto de Aplicativo criado usando a linguagem Flutter.
 # Tela de Login 
   
 <p align="center">
-  <img width="250" src="https://github.com/jemimabueno/greengrocer/blob/main/assets/to_readme/tela%20de%20login%20gif.gif">
+  <img width="250" src="https://github.com/jemimabueno/greengrocer/blob/main/assets/to_readme/login.gif">
   </p>
 
 # Tela de Cadastro
