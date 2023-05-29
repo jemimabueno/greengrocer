@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:greengrocer/src/pages/auth/home/home_tab.dart';
+import 'package:greengrocer/src/pages/cart/cart_tab.dart';
 
 class BaseScreen extends StatefulWidget {
  const BaseScreen({super.key});
@@ -20,7 +21,7 @@ class BaseScreen extends StatefulWidget {
           controller: pageController, // mudar a tela de acordo com o 'ícone' selecionado.
           children: [
             const HomeTab(),
-            Container(color: Colors.red),
+            const CartTab(),
             Container(color: Colors.blue),
             Container(color: Colors.pink),
           ],
