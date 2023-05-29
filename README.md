@@ -15,3 +15,9 @@ Este é um projeto de Aplicativo criado usando a linguagem Flutter.
 <p align="center">
   <img width="250" src="https://github.com/jemimabueno/greengrocer/blob/main/assets/to_readme/video_app_cadastro.gif">
   </p>
+
+# Tela de Produtos 
+
+<p align="center">
+  <img width="250" src="https://github.com/jemimabueno/greengrocer/blob/main/assets/to_readme/tela%20produtos%20-%20editada.gif">
+  </p>
