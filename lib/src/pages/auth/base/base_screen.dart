@@ -21,7 +21,7 @@ class BaseScreen extends StatefulWidget {
           controller: pageController, // mudar a tela de acordo com o 'ícone' selecionado.
           children: [
             const HomeTab(),
-            const CartTab(),
+             CartTab(),
             Container(color: Colors.blue),
             Container(color: Colors.pink),
           ],
